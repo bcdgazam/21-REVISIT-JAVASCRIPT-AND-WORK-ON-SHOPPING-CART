@@ -13,6 +13,12 @@ function footToMile(foot){
 //! Output Check
 footToMile(10)
 
+*/
+
+
+
+/*
+
 // Wood Calculator
 function woodCalculator(chair, table, bed){
     if(chair < 0 || table < 0 || bed < 0){
@@ -25,6 +31,11 @@ function woodCalculator(chair, table, bed){
 woodCalculator(1, 5, 10);
 
 */
+
+
+
+
+/*
 
 // Brick Calculator
 function brickCalculator(floor){
@@ -46,3 +57,25 @@ function brickCalculator(floor){
 }
 
 brickCalculator(5);
+
+*/
+
+
+// Find Tiny Friend
+
+function tinyFriend(friends){
+    if(friends.length === 0){
+        console.log('Please enter a valid list.');
+        return
+    }
+    
+    let tiny = friends[0];
+    for(let i = 0; i < friends.length; i++){
+        if(friends[i].length < tiny.length){
+            tiny = friends[i];
+        }
+    }
+    console.log('Tiny friends : ', tiny);
+}
+
+tinyFriend(['hitler', 'john', 'doe']);
